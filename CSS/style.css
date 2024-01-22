@@ -126,37 +126,23 @@ a{
 }
 
 .tech-stack {
-    height: 300px;
+    height: 180px;
     /* position: relative; */
     width: 100vw;
     background-color: white;
-    padding-top: 10px;
+    padding-top: 30px;
     text-align: center;
- 
-
   }
-  
-  .stack {
-    width: 100%;
-   height: 100%;
-    /* background-color: #3498db;
-    border-radius: 50%; */
+
+  .stack{
+    padding-top: 35px;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: space-between;
-    animation: forwardLogo 18s linear infinite;
     font-size: 42px;
   }
   
-  @keyframes forwardLogo {
-    0% {
-        transform: translateX(100%);
-      }
-    
-      100% {
-        transform: translateX(-100%);
-      }
-  }
+
 
 
 
@@ -273,7 +259,7 @@ a{
 @media screen and (max-width: 768px){
 
     h1,h2{
-        font-size: 26px;
+        font-size: 28px;
     }
      
 
@@ -359,12 +345,12 @@ a{
     width: 100vw;
     background: #2a2c39;
     color: white;
-    padding: 30px;
+    padding: 15px;
 }
 
 .section-info{
     display: block;
-    padding: 15px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -387,7 +373,7 @@ a{
 .card-group{
     display: block;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
     align-content: center;
 }
 
@@ -513,7 +499,7 @@ a{
 
 .section-info h1{
     padding-top: 30px;
-    font-size: 28px;
+    /* font-size: 28px; */
     font-weight: bold;
     text-align: center;
 }
@@ -541,14 +527,17 @@ a{
     color: #333;
 }
 
-    
-    
+        
 }
 /* 
 MEDIA QUARY */
 
- @media (max-width: 375px){
+ @media screen and (max-width: 375px){
    
+    body{
+        overflow-x: hidden;
+    }
+
    .checkbtn{
        display: block;
        margin-right: 10px;
@@ -583,7 +572,7 @@ MEDIA QUARY */
     
   
    #section-1{
-    height: 500px;
+    height: 900px;
     width: 100vw;
     padding: 15px;
     display: block;
@@ -592,7 +581,7 @@ MEDIA QUARY */
     
     .info-box{
     text-align: center;
-    width: 300px;
+    width: 350px;
     line-height: 1.8;
     padding: 20px 30px;
    
@@ -610,19 +599,18 @@ MEDIA QUARY */
 
 .img{
     background: url('../IMG/corp.JPG') no-repeat center center/cover;
-    height: 350px;
+    height: 380px;
     width: 350px;
     border-radius: 40px 0px 40px 0px;
     margin: auto;
 }
   
   #section-2{
-    /* height: 900px; */
     width: 100vw;
     background: #2a2c39;
     color: white;
-    padding: 10px;
-
+    padding: 5px;
+  }
 
 .section-info{
     padding: 10px;
@@ -635,7 +623,7 @@ MEDIA QUARY */
 
 .section-info h1{
     padding-top: 30px;
-    font-size: 35px;
+    /* font-size: 32px; */
     font-weight: bold;
     text-align: center;
 }
@@ -649,19 +637,16 @@ MEDIA QUARY */
 .card-group{
     display: block;
     justify-content: center;
-    padding: 2px;
+    padding: 0px;
     align-items: center;
 }
 
 .card{
-    height: 400px;
-    width:  320px;
+    width:  340px;
     background: white;
     border-radius: 10px;
     margin: 15px;
     color: #333;
 }
 
-    
-    
-} 
+ }
