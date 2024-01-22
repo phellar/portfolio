@@ -1,0 +1,667 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+ font-family: 'Raleway', sans-serif;
+ width: 100vw;
+ overflow-x: hidden;
+
+}
+ 
+h1,h2{
+    font-size: 32px;
+}
+ 
+a{
+    
+    text-decoration: none;
+    color: #333;
+}
+
+#header{
+    z-index: 1;
+    top: 0;
+    position: sticky;
+}
+
+
+.navbar{
+    background: white;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+    box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.1);
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a{
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+
+.active{
+     font-weight: bold;
+     
+}
+
+
+
+#section-1{
+    height: 100vh;
+    width: 100vw;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    background: white;
+}
+
+.info-box{
+    height: 500px;
+    width: 800px;
+    padding: 70px 50px;
+    line-height: 1.8;
+}
+
+.info-box h1{
+    font-size: 45px;
+    padding-bottom: 10;
+}
+
+
+.info-box p{
+    padding-bottom: 25px;
+    font-size: 18px;
+}
+
+.cta-btn-1{
+    background: #4f4adE;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    margin-right: 15px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+.cta-btn-1:hover{
+    transition: 1s;
+    opacity: 0.7;
+}
+
+
+.cta-btn-2{
+    background: transparent;
+    border: 1px solid  #4f4ade;
+    color: #333;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+
+.img{
+    background: url('../IMG/corp.JPG') no-repeat center center/cover;
+    height: 500px;
+    width: 450px;
+    border-radius: 40px 0px 40px 0px;
+}
+
+.highlight{
+    color:  #4f4ad7;
+}
+
+.tech-stack {
+    height: 300px;
+    /* position: relative; */
+    width: 100vw;
+    background-color: white;
+    padding-top: 10px;
+    text-align: center;
+ 
+
+  }
+  
+  .stack {
+    width: 100%;
+   height: 100%;
+    /* background-color: #3498db;
+    border-radius: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: forwardLogo 18s linear infinite;
+    font-size: 42px;
+  }
+  
+  @keyframes forwardLogo {
+    0% {
+        transform: translateX(100%);
+      }
+    
+      100% {
+        transform: translateX(-100%);
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MY PORTFOLIO SECTION STYLING*/
+#section-2{
+    /* height: 1100px; */
+    width: 100vw;
+    background: #2a2c39;
+    color: white;
+    padding: 30px;
+}
+
+.section-info{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+.section-info h1{
+    /* font-size: 40px; */
+    font-weight: bold;
+}
+
+.section-info p{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+
+.card-group{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.card{
+    /* height: 500px; */
+    width: 500px;
+    background: white;
+    border-radius: 10px;
+    margin: 15px;
+    color: #333;
+}
+
+
+
+.card-header{
+    /*background: url('../IMG/uni.png') no-repeat center center/cover;*/
+    height: 250px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-info{
+    padding: 25px ;
+    line-height: 1.5;
+}
+
+.card-info p{
+    padding-bottom: 15px ;
+    
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+#project{
+    border: 1px solid blue;
+    padding: 5px;
+}
+
+#footer{
+    height: 100px;
+    width: 100vw;
+    background: #dee3e4;
+    color: #333;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+/*768px screen media query*/
+/*MEDIA QUARY*/
+
+@media screen and (max-width: 768px){
+
+    h1,h2{
+        font-size: 26px;
+    }
+     
+
+   .checkbtn{
+       display: block;
+       margin-right: 10px;
+       font-size: 30px;
+       cursor: pointer;
+}
+
+
+ .navbar ul{
+        background:#4f4ad7 ;
+        height: 100vh;
+        width: 100%;
+        color: white;
+        top: 70px; 
+        position: fixed;
+        left: -100%;
+        text-align: center ;
+        display: block;
+        transition: 0.6s ease;
+    
+    }
+    
+     .navbar ul li a{
+         margin: 40px;
+         display: block;
+         text-align: center;
+          font-size: 16px;
+          color: white;
+      } 
+  
+   .navbar ul li a:hover{
+       background: #fff;
+       color: #4f4ade;
+       padding: 15px;
+       border-radius: 8px;
+   }
+  
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+  
+
+   #section-1{
+    height: 900px;
+    width: 100vw;
+    padding: 10px;
+    display: block;
+    flex-direction: column;
+}
+    
+    .info-box{
+    display: block;
+    text-align: center;
+    width: 100vw;
+    line-height: 1.5;
+   
+    
+}
+
+.info-box h1{
+    font-size: 45px;
+}
+
+.info-box p{
+    font-size: 16px;
+    text-align: left;
+}
+
+.img{
+    background: url('../IMG/corp.JPG') no-repeat center center/cover;
+    height: 350px;
+    width: 300px;
+    border-radius: 40px 0px 40px 0px;
+    margin: auto;
+}
+  
+  #section-2{
+
+    width: 100vw;
+    background: #2a2c39;
+    color: white;
+    padding: 30px;
+}
+
+.section-info{
+    display: block;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+.section-info h1{
+    padding-top: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-info p{
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-group{
+    display: block;
+    justify-content: center;
+    padding: 20px;
+    align-content: center;
+}
+
+.card{
+    /* height: 400px; */
+    width:  350px;
+    background: white;
+    border-radius: 10px;
+    margin: 15px;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUARY*/
+
+@media screen and (max-width: 480px){
+
+
+ 
+   .checkbtn{
+       display: block;
+       margin-right: 10px;
+       font-size: 30px;
+}
+
+
+ .navbar ul{
+        background:#4f4ad7 ;
+        height: 100vh;
+        width: 100%;
+        color: white;
+        top: 70px; 
+        position: fixed;
+        left: -100%;
+        text-align: center ;
+        display: block;
+        transition: 0.6s ease;
+    
+    }
+    
+     .navbar ul li a{
+         margin: 40px;
+         display: block;
+         text-align: center;
+          font-size: 16px;
+          color: white;
+      } 
+      
+       .navbar ul li a:hover{
+       background: #fff;
+       color: #102c54;
+       padding: 15px;
+       border-radius: 8px;
+   }
+      
+  
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+
+   
+   #section-1{
+    height: 900px;
+    width: 100vw;
+    padding: 0px;
+    display: block;
+}
+    
+    .info-box{
+    display: block;
+    text-align: center;
+    width: 100vw;
+    
+}
+
+.info-box h1{
+    font-size: 38px;
+}
+
+.info-box p{
+    font-size: 16px;
+    text-align: left;
+    padding-left: 13px;
+
+}
+
+.img{
+    background: url('../IMG/corp.JPG') no-repeat center center/cover;
+    height: 350px;
+    width: 300px;
+    border-radius: 40px 0px 40px 0px;
+    margin: auto;
+}
+  
+  #section-2{
+    /* height: 1500px; */
+    width: 100vw;
+    color: white;
+    padding: 10px;
+}
+
+.section-info{
+    display: block;
+    padding: 10px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    justify-content: center;
+    line-height: 1.5;
+}
+
+.section-info h1{
+    padding-top: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-info p{
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-group{
+    display: block;
+    justify-content: center;
+    padding: 5px;
+    align-content: center;
+}
+
+.card{
+    /*height: 400px;*/
+    /*width:  350px;*/
+    background: white;
+    border-radius: 10px;
+    margin-top: 15px;
+
+    color: #333;
+}
+
+    
+    
+}
+/* 
+MEDIA QUARY */
+
+ @media (max-width: 375px){
+   
+   .checkbtn{
+       display: block;
+       margin-right: 10px;
+}
+
+ .navbar ul{
+        background:#4f4ad7 ;
+        height: 100vh;
+        width: 100%;
+        color: white;
+        top: 60px; 
+        position: fixed;
+        left: -100%;
+        text-align: center ;
+        display: block;
+        transition: 0.6s ease;
+    
+    }
+    
+     .navbar ul li a{
+         margin: 40px;
+         display: block;
+         text-align: center;
+          font-size: 16px;
+          color: white;
+      } 
+  
+    #check:checked ~ ul{
+        left: 0;
+        
+    }
+    
+  
+   #section-1{
+    height: 500px;
+    width: 100vw;
+    padding: 15px;
+    display: block;
+   
+    }
+    
+    .info-box{
+    text-align: center;
+    width: 300px;
+    line-height: 1.8;
+    padding: 20px 30px;
+   
+    }
+
+.info-box h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.info-box p{
+    font-size: 16px;
+    
+}
+
+.img{
+    background: url('../IMG/corp.JPG') no-repeat center center/cover;
+    height: 350px;
+    width: 350px;
+    border-radius: 40px 0px 40px 0px;
+    margin: auto;
+}
+  
+  #section-2{
+    /* height: 900px; */
+    width: 100vw;
+    background: #2a2c39;
+    color: white;
+    padding: 10px;
+
+
+.section-info{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+.section-info h1{
+    padding-top: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-info p{
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-group{
+    display: block;
+    justify-content: center;
+    padding: 2px;
+    align-items: center;
+}
+
+.card{
+    height: 400px;
+    width:  320px;
+    background: white;
+    border-radius: 10px;
+    margin: 15px;
+    color: #333;
+}
+
+    
+    
+} 
